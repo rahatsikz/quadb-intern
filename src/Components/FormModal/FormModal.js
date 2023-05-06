@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-hot-toast";
 
 const FormModal = ({ data, modalClose, setData }) => {
   const { show } = data;
@@ -20,6 +21,7 @@ const FormModal = ({ data, modalClose, setData }) => {
 
     localStorage.setItem("user", JSON.stringify(user));
     modalClose();
+    toast.success("Thanks For Booking");
   };
   return (
     <div>
