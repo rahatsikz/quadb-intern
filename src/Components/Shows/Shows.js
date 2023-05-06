@@ -14,7 +14,7 @@ const Shows = () => {
       <h2 className="text-2xl font-medium font-mono text-green-600 underline underline-offset-8 text-center mt-8">
         Show List
       </h2>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 container mx-auto my-8">
+      <div className="grid 2xl:grid-cols-3 md:grid-cols-2 gap-6 container mx-auto my-8">
         {show.map((showDetail, idx) => (
           <ShowCard key={idx} showDetail={showDetail} idx={idx}></ShowCard>
         ))}
